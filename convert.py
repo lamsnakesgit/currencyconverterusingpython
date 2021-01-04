@@ -13,7 +13,7 @@ def Realtimeconversion():
     from_currency = var1.get()
     to_currency = var2.get()
 
-    api_key = "Your_Api_Key"
+    api_key = " OCUVYBX9K22IFG6Y"
 
     base_url = r"https://www.alphavantage.co/query?function = CURRENCY_EXCHANGE_RATE"
     main_url = base_url + "&from_currency =" + from_currency + "&to_currency =" + to_currency + "&apikey =" + api_key
@@ -22,8 +22,7 @@ def Realtimeconversion():
 
     result = req_ob.json()
 
-    Exchange_Rate = float(result["Realtime Currency Exchange Rate"]
-            ['5. Exchange Rate'])
+    Exchange_Rate = float(result["Realtime Currency Exchange Rate"]['5. Exchange Rate'])
 
     #amount - float(Amount1_field.get())
     amount = float(Amount1_field.get())
